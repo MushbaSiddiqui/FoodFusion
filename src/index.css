@@ -1,0 +1,81 @@
+/* Container for the toggle switch
+.toggle-container {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-container:hover {
+  background-color: #bbb;
+}
+
+/* Toggle slider */
+/*.toggle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Light Theme: Slider on the left 
+.toggle.light {
+  left: 2px;
+}*/
+
+/* Dark Theme: Slider on the right 
+.toggle.dark {
+  left: calc(100% - 38px); /* Align to the right perfectly (36px + 2px from left)
+} 
+*/
+/* Icon styles */
+/* .icon {
+  font-size: 20px;
+}
+
+.sun {
+  color: #f39c12; /* Bright orange for sun 
+ }
+
+.moon {
+  color: #3498db; /* Bright blue for moon 
+}  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add styles for the Card Page */
+.card-input {
+    margin-bottom: 10px;
+}
+
+.card-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .card-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
